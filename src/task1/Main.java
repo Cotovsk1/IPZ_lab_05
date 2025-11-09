@@ -1,5 +1,11 @@
 package task1;
 
+/**
+ * Example runner for the network model.
+ *
+ * Builds a sample network, runs a CostCalculator visitor to compute total cost,
+ * and uses DisplayVisitor to print the network structure to the console.
+ */
 public class Main {
     public static void main(String[] args) {
 

@@ -1,5 +1,11 @@
 package task1;
 
+/**
+ * Visitor implementation that prints the network structure and element details.
+ *
+ * This visitor indents output to visualize the structure. It expects Network to
+ * call accept() on children so that the printed order follows the composite tree.
+ */
 public class DisplayVisitor implements Visitor{
     private int indent = 6;
 

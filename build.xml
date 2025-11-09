@@ -1,0 +1,16 @@
+<project name="lab_04" default="generate-javadoc" basedir=".">
+    <!-- Project properties -->
+    <property name="src.dir" value="src"/>
+    <property name="doc.dir" value="${src.dir}/doc"/>
+    <property name="package.dir" value="${src.dir}/lab_02"/>
+
+    <!-- Generate JavaDoc documentation -->
+    <target name="generate-javadoc" description="Generates JavaDoc documentation for the project">
+        <mkdir dir="${doc.dir}"/>
+        <javadoc destdir="${doc.dir}" sourcepath="${src.dir}">
+            <packageset dir="${src.dir}">
+                <include name="**/*.java"/>
+            </packageset>
+        </javadoc>
+    </target>
+</project>

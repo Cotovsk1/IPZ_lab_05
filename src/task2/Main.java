@@ -1,5 +1,11 @@
 package task2;
 
+/**
+ * Demo runner for the simple drawing tools.
+ *
+ * Switches the active tool on a Canvas and simulates mouse events to show
+ * how different ToolState implementations behave.
+ */
 public class Main {
     public static void main(String[] args) {
         System.out.println("\nHello World!");
